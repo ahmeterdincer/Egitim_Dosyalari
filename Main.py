@@ -93,8 +93,13 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # Tek sutun sec (2D hale getirmek icin kose parantez ile)
+#bizden iki boyutlu satır ve sutunu olan bir veri bekler
+print("0"*100)
+
 X_age_train = X_train[["Age"]]
 X_age_test   = X_test[["Age"]]
+print(X_train["Age"])
+print(X_train[["Age"]])
 # Modeli egitme
 model_slr = LinearRegression()
 model_slr.fit(X_age_train, y_train)       
